@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BuyAndSellStocks</title>
+<link href="bitnami.css" rel="stylesheet" type="text/css">
+</head>
+<body><form action="StockCalculator.php" method="post">
+<h1>Stock Trading Calculator</h1>
+	<p>
+		<br>Service charge in decimal format <br><input type="number" step="0.001" name="serviceCharge">
+		<br>Number of shares sold <br><input type="number" step="0.01" name="totalShares">
+		<br>Purchase price of each share <br><input type="number" step="0.01" name="pricePerShareBought">
+   		<br>Selling price of each share <br><input type="number" step="0.01" name="pricePerShareSold">
+	</p>
+	<p><input type="submit" value="Calculate"><input type="button" value="Refresh" onClick="history.go()"></p>
+</form></body>
+</html>
